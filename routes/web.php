@@ -1310,5 +1310,5 @@ Route::group(['middleware' => 'auth'] , function() {
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
-Route::get('/sample', 'HomeController@sample');
+
 
