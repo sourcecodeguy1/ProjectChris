@@ -1312,17 +1312,3 @@ Auth::routes();
 Route::get('/', 'HomeController@index');
 Route::get('/sample', 'HomeController@sample');
 
-//Route::get('/register', 'HomeController@register');
-
-
-/*Route::get('/register', function() {
-    return redirect('login');
-});*/
-
-/*Route::get('/password/reset', function() {
-    return redirect('/login');
-});
-
-Route::get('/', function() {
-    return redirect('/sales');
-});*/
