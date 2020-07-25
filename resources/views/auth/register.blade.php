@@ -73,6 +73,16 @@
                                     @enderror
                                 </div>
 
+                                <div class="field-wrapper terms_condition">
+                                    <div class="n-chk">
+                                        <label class="new-control new-checkbox checkbox-primary">
+                                            <input type="checkbox" class="new-control-input">
+                                            <span class="new-control-indicator"></span><span>I agree to the <a href="javascript:void(0);">  terms and conditions </a></span>
+                                        </label>
+                                    </div>
+
+                                </div>
+
                                 <div class="d-sm-flex justify-content-between">
                                     <div class="field-wrapper">
                                         <button type="submit" class="btn btn-primary">Register</button>
