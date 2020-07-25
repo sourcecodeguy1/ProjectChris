@@ -80,7 +80,7 @@
                                 </div>
 
                                 <div class="division">
-                                    <span>Already a member? Login <a href="{{url('/login')}}">here</a></span>
+                                    <p class="signup-link register">Already a member? <a href="{{url('/login')}}">Log in</a></p>
                                 </div>
 
                             </div>
