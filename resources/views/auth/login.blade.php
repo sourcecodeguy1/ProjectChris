@@ -51,7 +51,7 @@
                                     </div>
                                 </div>
 
-                                <div class="division" style="color: white;">
+                                <div class="division">
                                       <span>OR</span>
                                     <p><a href="{{url('password/reset')}}">Forgot Your Password?</a></p>
                                 </div>
