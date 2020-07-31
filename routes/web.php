@@ -1263,8 +1263,9 @@ Route::group(['middleware' => 'auth'] , function() {
     });
 
     // Users
-    Route::prefix('users')->group(function () {
-        Route::get('/account_settings', function() {
+
+        /** USING USERS CONTROLLER TO CALL THE '/account_settings' **/
+       /* Route::get('/account_settings', function() {
             // $category_name = '';
             $data = [
                 'category_name' => 'users',
@@ -1275,8 +1276,10 @@ Route::group(['middleware' => 'auth'] , function() {
             ];
             // $pageName = 'account_settings';
             return view('pages.users.user_account_setting')->with($data);
-        });
-        Route::get('/profile', function() {
+        });*/
+
+       //Route::prefix('users')->group(function () {
+        /*Route::get('/profile', function() {
             // $category_name = '';
             $data = [
                 'category_name' => 'users',
@@ -1287,8 +1290,8 @@ Route::group(['middleware' => 'auth'] , function() {
             ];
             // $pageName = 'profile';
             return view('pages.users.user_profile')->with($data);
-        });
-    });
+        });*/
+    //});
 
     // Widgets
     Route::get('/widgets', function() {
@@ -1308,6 +1311,10 @@ Route::group(['middleware' => 'auth'] , function() {
 });
 
 Auth::routes();
+
+Route::resource('account_settings', 'UsersController');
+
+Route::resource('profile', 'ProfileController');
 
 Route::get('/', 'HomeController@index');
 

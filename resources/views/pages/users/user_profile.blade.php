@@ -13,11 +13,11 @@
                             <div class="widget-content widget-content-area">
                                 <div class="d-flex justify-content-between">
                                     <h3 class="">Profile</h3>
-                                    <a href="/users/account_settings" class="mt-2 edit-profile"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></a>
+                                    <a href="/account_settings" class="mt-2 edit-profile"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></a>
                                 </div>
                                 <div class="text-center user-info">
-                                    <img src="{{asset('storage/img/90x90.jpg')}}" alt="avatar">
-                                    <p class="">Jimmy Turner</p>
+                                    <img height="200" width="200" src="/storage/img/{{$user_data->profile_image}}" alt="avatar">
+                                    <p class="">{{$user_data->fullName}}</p>
                                 </div>
                                 <div class="user-info-list">
 
@@ -33,7 +33,7 @@
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>New York, USA
                                             </li>
                                             <li class="contacts-block__item">
-                                                <a href="mailto:example@mail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>Jimmy@gmail.com</a>
+                                                <a href="mailto:example@mail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>{{$user_data->email}}</a>
                                             </li>
                                             <li class="contacts-block__item">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> +1 (530) 555-12121
@@ -58,7 +58,7 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </div>                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -105,13 +105,13 @@
                         </div>
 
                         <div class="work-experience layout-spacing ">
-                            
+
                             <div class="widget-content widget-content-area">
 
                                 <h3 class="">Work Experience</h3>
-                                
+
                                 <div class="timeline-alter">
-                                
+
                                     <div class="item-timeline">
                                         <div class="t-meta-date">
                                             <p class="">04 Mar 2009</p>
@@ -179,16 +179,14 @@
                         <div class="bio layout-spacing ">
                             <div class="widget-content widget-content-area">
                                 <h3 class="">Bio</h3>
-                                <p>I'm Web Developer from California. I code and design websites worldwide. Mauris varius tellus vitae tristique sagittis. Sed aliquet, est nec auctor aliquet, orci ex vestibulum ex, non pharetra lacus erat ac nulla.</p>
-
-                                <p>Sed vulputate, ligula eget mollis auctor, lectus elit feugiat urna, eget euismod turpis lectus sed ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc ut velit finibus, scelerisque sapien vitae, pharetra est. Nunc accumsan ligula vehicula scelerisque vulputate.</p>
+                                <p>{!! $user_data->bio !!}</p>
 
                                 <div class="bio-skill-box">
 
                                     <div class="row">
-                                        
+
                                         <div class="col-12 col-xl-6 col-lg-12 mb-xl-5 mb-5 ">
-                                            
+
                                             <div class="d-flex b-skills">
                                                 <div>
                                                 </div>
@@ -201,7 +199,7 @@
                                         </div>
 
                                         <div class="col-12 col-xl-6 col-lg-12 mb-xl-5 mb-5 ">
-                                            
+
                                             <div class="d-flex b-skills">
                                                 <div>
                                                 </div>
@@ -214,7 +212,7 @@
                                         </div>
 
                                         <div class="col-12 col-xl-6 col-lg-12 mb-xl-0 mb-5 ">
-                                            
+
                                             <div class="d-flex b-skills">
                                                 <div>
                                                 </div>
@@ -227,7 +225,7 @@
                                         </div>
 
                                         <div class="col-12 col-xl-6 col-lg-12 mb-xl-0 mb-0 ">
-                                            
+
                                             <div class="d-flex b-skills">
                                                 <div>
                                                 </div>
@@ -243,12 +241,12 @@
 
                                 </div>
 
-                            </div>                                
+                            </div>
                         </div>
 
                     </div>
 
                 </div>
             </div>
-            
+
 @endsection

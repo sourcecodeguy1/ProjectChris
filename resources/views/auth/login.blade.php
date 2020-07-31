@@ -1,7 +1,7 @@
  @extends('layouts.app')
 
  @section('content')
-
+{{$page_name = ""}}
     <div class="form-container outer">
         <div class="form-form">
             <div class="form-form-wrap">

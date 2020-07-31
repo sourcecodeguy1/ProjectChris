@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel App') }}</title>
+    <title>{{ setTitle($page_name) }}</title>
 
 
 
