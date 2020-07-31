@@ -15,6 +15,9 @@
     an image, it doesn't copy the image from the storage to the public/storage/img directory. This
     code can be found in the 'UsersController@update' function.
 </li>
+<li>However, when I manually copy the image to the public/storage/img, it obviously works. That's where
+    I'm basically at right now.
+</li>
 <li>That's pretty much the gist of it. If you have any questions, please let me know.</li>
 <li>I'm off to Santa Barbara for the day. I'll be back in the evening to keep working on it.</li>
 <li>Let me know what you think of it so far. :)</li>
