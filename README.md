@@ -7,6 +7,10 @@
          I'm grabbing the ID based on the currently logged user. Let me know if you want me to
          change it.
 </li>
+<li>Also, about the controllers, I used the --resource flag even though it wasn't necessary.
+    I just did it because of habit. I'm only using one or two functions in each of the controller
+    at most.
+</li>
 <li>That's pretty much the gist of it. If you have any questions, please let me know.</li>
 <li>I'm off to Santa Barbara for the day. I'll be back in the evening.</li>
 </ul>
