@@ -8,9 +8,14 @@
          change it.
 </li>
 <li>Also, about the controllers, I used the --resource flag even though it wasn't necessary.
-    I just did it because of habit. I'm only using one or two functions in each of the controller
+    I just did it because of habit. I'm only using one or two functions in each of the two controllers
     at most.
 </li>
+<li>However, the project is still unfinished because I'm having trouble figuring out why when I upload
+    an image, it doesn't copy the image from the storage to the public/storage/img directory. This
+    code can be found in the 'UsersController@update' function.
+</li>
 <li>That's pretty much the gist of it. If you have any questions, please let me know.</li>
-<li>I'm off to Santa Barbara for the day. I'll be back in the evening.</li>
+<li>I'm off to Santa Barbara for the day. I'll be back in the evening to keep working on it.</li>
+<li>Let me know what you think of it so far. :)</li>
 </ul>
